@@ -1,0 +1,159 @@
+/*css*/
+body{
+    height: 700px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#order{
+    margin-left: -220px;
+}
+#log{
+    margin-right: -220px;
+}
+#order,#log{
+    width: 50%;
+    font-size: 14px;
+    float: left;
+    box-sizing: border-box;
+}
+#order .mes,#log .mes{
+    font-size: 12px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    max-height: 650px;
+    overflow-y: auto;
+}
+#order .mes{
+    margin-top: 40px;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+#log .mes{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 250px;
+}
+#order .mes p:first-of-type,
+#log .mes p:first-of-type{
+    font-size: 14px;
+    text-align: center;
+}
+
+#container{
+    width: 440px;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+}
+
+#wrapper{
+    width: 440px;
+    height: 440px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#wrapper tbody tr td{
+    width: 40px;
+    height: 40px;
+    border-collapse: collapse;
+    line-height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+#wrapper tbody tr:not(:first-of-type) td:not(:first-of-type){
+    border: 1px solid #ccc;
+}
+#wrapper tbody tr:nth-of-type(2) td:not(:first-of-type){
+    border-top-color: #000;
+}
+#wrapper tbody tr:not(:first-of-type) td:last-of-type{
+    border-right-color: #000;
+}
+#wrapper tbody tr:last-of-type td:not(:first-of-type){
+    border-bottom-color: #000;
+}
+#wrapper tbody tr:not(:first-of-type) td:nth-of-type(2){
+    border-left-color: #000;
+}
+
+#block{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 0;
+    position: absolute;
+    top: 200px;
+    left: 240px;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#blue,#red{
+    height: 38px;
+    display: inline-block;
+}
+#blue{
+    width: 9px;
+    background-color: blue;
+}
+#red{
+    width: 29px;
+    background-color: red;
+}
+
+#textarea-wrapper{
+    width: 430px;
+    height: 160px;
+    font-size: 0;
+    clear: both;
+    margin: 0 auto;
+    margin-left: -215px;
+    position: absolute;
+    left: 50%;
+    top: 460px;
+}
+#list,#textarea{
+    height: 160px;
+    line-height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+#list{
+    width: 30px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    list-style: none;
+    background-color: #ccc;
+}
+#list li{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+#textarea{
+    width: 400px;
+    color: green;
+    background-color: #000;
+    resize: none;
+    padding-left: 5px;
+}
+#inputs{
+    width: 100%;
+    height: 60px;
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+}
